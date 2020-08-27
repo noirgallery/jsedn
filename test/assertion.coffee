@@ -27,6 +27,8 @@ assertParse = (desc, str, pred) ->
 	catch e 
 		result = e
 
+	console.log result
+
 	assert desc, result, pred
 
 assertNotParse = (desc, str) -> 

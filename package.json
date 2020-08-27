@@ -51,6 +51,7 @@
     "jsedn": "./bin/jsedn"
   },
   "scripts": {
+    "build": "coffee --compile --output lib src",
     "test-perf": "coffee test/perf.coffee && coffee test/performance-tests.coffee",
     "test-spec": "coffee test/all-edn-tests.coffee && coffee test/all-invalid-edn-tests.coffee && coffee test/assertion.coffee && coffee test/primitives.coffee && coffee test/unify.coffee",
     "test": "npm run test-perf && nyc --extension .coffee npm run test-spec"
